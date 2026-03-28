@@ -1,0 +1,85 @@
+body {
+    font-family: 'Segoe UI';
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* CARD UI */
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    width: 320px;
+    max-width: 95%;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    animation: fadeIn 0.5s ease;
+}
+
+/* INPUT */
+input {
+    width: 85%;
+    padding: 10px;
+    margin: 8px auto;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    display: block;
+    box-sizing: border-box;
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid #667eea;
+    box-shadow: 0 0 5px rgba(102, 126, 234, 0.3);
+}
+
+/* BUTTON */
+button {
+    padding: 12px;
+    margin-top: 10px;
+    border: none;
+    background: #667eea;
+    color: white;
+    font-size: 15px;
+    border-radius: 8px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #5a67d8;
+    transform: scale(1.02);
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+a {
+    text-decoration: none;
+}
+
+a button {
+    width: 100%;
+}
+
+h2, h3 {
+    color: #333;
+    margin-top: 0;
+}
+
+/* ANIMATION */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
